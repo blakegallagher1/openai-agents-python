@@ -1,0 +1,3 @@
+# Map audit log "reason" entries to manual fix descriptions
+missing_header: "Add header row to table before parsing"
+ocr_error: "Verify scanned page and correct text"

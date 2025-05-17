@@ -166,6 +166,16 @@ make mypy   # run typechecker
 make lint   # run linter
 ```
 
+## Audit log utilities
+
+Use `ebr_zoning_strategist.audit` to summarize parser errors and apply manual fix
+rules.
+
+```bash
+python -m ebr_zoning_strategist.audit audit_log.csv rules.yaml fixed_audit.csv
+```
+
+
 ## Acknowledgements
 
 We'd like to acknowledge the excellent work of the open-source community, especially:
