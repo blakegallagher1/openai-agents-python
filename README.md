@@ -176,3 +176,28 @@ We'd like to acknowledge the excellent work of the open-source community, especi
 -   [uv](https://github.com/astral-sh/uv) and [ruff](https://github.com/astral-sh/ruff)
 
 We're committed to continuing to build the Agents SDK as an open source framework so others in the community can expand on our approach.
+
+## Future Land Use Integration Example
+
+The `ebr_zoning_strategist` package demonstrates how to integrate zoning data with the parish Future Land Use Plan. Categories are parsed directly from the authoritative source file `future land use categories.txt` and exposed via the `FutureLandUseCategory` enum. The `ScenarioEngine` checks parcels for zoning and future land use compliance.
+
+```python
+from ebr_zoning_strategist.engine import ScenarioEngine
+from ebr_zoning_strategist.models import Parcel, FutureLandUseCategory
+
+engine = ScenarioEngine()
+parcel = Parcel(
+    parcel_id="123",
+    zoning_district="A1",
+    proposed_use="residential",
+    future_land_use=FutureLandUseCategory.AGRICULTURAL_RURAL,
+)
+report = engine.analyze(parcel)
+print(report.model_dump())
+```
+
+Outputs:
+
+```json
+{'parcel_id': '123', 'zoning_compliant': True, 'future_land_use_compliant': True, 'details': {}}
+```
