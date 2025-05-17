@@ -1,0 +1,64 @@
+# Core Libraries
+pydantic==2.5.2
+pandas==2.2.1
+numpy==1.26.4
+
+# PDF Parsing and Table Extraction
+pdfplumber==0.10.3
+camelot-py[cv]==0.11.0
+PyPDF2==3.0.1
+
+# Geospatial Analysis
+shapely==2.0.3
+geopandas==0.14.3
+fiona==1.9.5
+pyproj==3.6.1
+rtree==1.2.0
+
+# Command-Line Interface (CLI) Development
+argparse==1.4.0
+click==8.1.7
+typer==0.9.0
+
+# Data Validation and Testing
+pytest==8.1.1
+pytest-cov==4.1.0
+hypothesis==6.99.0
+
+# Caching and Performance
+joblib==1.4.0
+diskcache==5.6.3
+
+# Logging and Debugging
+loguru==0.7.2
+rich==13.7.1
+
+# Development Utilities
+black==24.3.0
+isort==5.13.2
+mypy==1.9.0
+pre-commit==3.6.2
+
+# Optional: Machine Learning and Data Science Tools
+scikit-learn==1.4.1.post1
+matplotlib==3.8.3
+seaborn==0.13.2
+
+# Optional: Web Frameworks and APIs
+fastapi==0.110.0
+uvicorn==0.29.0
+requests==2.31.0
+
+# Optional: Database Connectors
+sqlalchemy==2.0.29
+psycopg2-binary==2.9.9
+
+# Optional: Excel and CSV Handling
+openpyxl==3.1.2
+xlrd==2.0.1
+
+# Optional: PDF Generation
+reportlab==4.0.8
+
+# Optional: Environment Management
+python-dotenv==1.0.1
